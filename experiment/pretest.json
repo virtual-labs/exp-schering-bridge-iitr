@@ -1,39 +1,5 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+[{"question":"Schering bridge is used for _________.","answers":{"a":"low voltages only","b":"low and high voltages","c":"high voltages only","d":"intermediate voltages only"},"correctAnswer":"b"},
+{"question":"Power factor of a Schering bridge is _________.","answers":{"a":"p.f. = sin∅\u2093 = Z\u2093 ⁄ R\u2093","b":"p.f. = cot∅\u2093 = R\u2093 ⁄ Z\u2093","c":"p.f. = cos∅\u2093 = R\u2093 ⁄ Z\u2093","d":"p.f. = tan∅\u2093 = R\u2093 ⁄ Z\u2093"},"correctAnswer":"c"},
+{"question":"For phase angles close to 90°, the power factor of the bridge is _________.","answers":{"a":"p.f. = ωR\u2093","b":"p.f. = ωC\u2093","c":"p.f. = R\u2093 C\u2093","d":"p.f. = ωR\u2093 C\u2093"},"correctAnswer":"d"},
+{"question":"For a series RC circuit, what is δ?","answers":{"a":"voltage between series RC combination and C","b":"voltage between series RC combination","c":"voltage across C","d":"voltage across R"},"correctAnswer":"a"},
+{"question":"What is the expression for the loss angle?","answers":{"a":"tan⁡ δ = ωR\u2084","b":"tan⁡ δ = ωR\u2084 C\u2084","c":"tan⁡ δ = ωC\u2084","d":"tan⁡ δ = R\u2084 C\u2084"},"correctAnswer":"b"}]

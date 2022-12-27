@@ -1,1 +1,1 @@
-## Experiment name
+## Measurement of capacitance by Schering Bridge.
