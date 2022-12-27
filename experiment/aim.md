@@ -1,1 +1,1 @@
-### Aim of the experiment
+#### Measurement of capacitance by Schering Bridge.
