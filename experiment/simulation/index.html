@@ -1,283 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-	 <title>VIRTUAL LAB</title>
-	 
-     <link rel="stylesheet" type="text/css" href="css/main.css">
-    
-      <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
-        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">    
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 
-      
-        <link rel="stylesheet" href="css/demo1.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Labs | Schering Bridge</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="icon" href="./images/Vlab logo.jpg" type="image/x-icon">
 
-        <!--link of Seven Segment code  starts-->
+    <style>
+        body {
+            font-family: Arial;
+            background-image: linear-gradient(70.6deg, rgb(172, 63, 127) 11.2%, rgba(110, 123, 251, 1) 91.1%);
+            position: relative;
+            animation: change 10s ease-in-out infinite;
+            /*for single color*/
+        }
 
-    <link href="http://fonts.googleapis.com/css?family=Iceberg" rel="stylesheet">
-    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/ui-darkness/jquery-ui.css" rel="stylesheet">   
-    <link href="css/prettify.css" rel="stylesheet">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/knockout-2.2.1.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.js"></script>
 
-    <script src="js/sevenSeg.js"></script>
-    <script src="js/demo.js"></script>
-    
-<!--link of seven Segment code ends-->
- 
 
+        .bal-btn {
+            background-color: black;
+            color: white;
+            position: absolute;
+            margin-left: -210px;
+            height: 50px;
+            padding: 5px 20px;
+            text-decoration: none;
+            border-radius: 50px;
+            letter-spacing: 2px;
+            outline: none;
+        }
+
+
+        .unbal-btn {
+            background-color: black;
+            color: white;
+            position: absolute;
+            height: 50px;
+            padding: 5px 20px;
+            text-decoration: none;
+            border-radius: 50px;
+            letter-spacing: 2px;
+        }
+
+        a:hover {
+            background-color: #337ab7;
+            border: 1px solid #0258a8;
+            padding: 4px 19px;
+            color: white;
+        }
+
+        a:active {
+            color: white;
+        }
+
+
+        a:link {
+            text-decoration: none;
+        }
+
+        h1 {
+            color: black;
+            letter-spacing: 2px;
+            text-shadow: 2px 3px 3px white;
+        }
+    </style>
 </head>
-<body data-demo-id="animation">
-	<div class="box" style="position:absolute;">
-		<div class="container1" style="position:absolute;">
-			<img src="images\Logo.png" width="95px" height="95px" style="margin-left: 5px; float: left;" >
-			<center><h2 >Virtual Labs IIT Roorkee<br>Electrical Measurements Laboratory<br></h2>
-			<h2 style="background-color: black;">Schering Bridge</h2></center></div>
-			<div style="position: relative; margin-top: 100px;"><br>
-      </div>
 
-      <!--mcb code-->
-     
-
-      <img src="images\mcb1.png"  onclick="mcbonoff();" width="90px" height="150px" style="margin-left:2px; margin-top:10px; position:absolute;" id ="mcbb"  class="disabled";>
-
-      <div id="mcb1" style="position:absolute;">
-        
-      </div>
+<body>
 
 
-      <!--kit code-->
-      <div class="container2" style="position:absolute;">
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
 
-      	<div class="knob" style="position:absolute;">
-      		<img src="images\knobs part 11.png" width="80px" height="80px" 
-            style="margin-left:25px; margin-top:25px; position:absolute;" id="knob6">
-          <img src="images\knobs part 2.png" width="122px" height="102px" onclick="knob();" 
-            style="margin-left:2px; margin-top:3px; position:absolute;">
-           <p style="position:absolute;color:white;left:194px;top:280px;">Q</p>   
-      	</div>
-        <div>
-          <p style="position:absolute;color:white;left:238px;top:110px;">Set Amplitude</p>
-        </div>
-         
-      	<!--knob5-->
-      	<div style="position:absolute;">
-          <p style="position:absolute;color:white;left:776px;top:294px;">C<sub>3</sub></p>
-        </div>
-      	<div class="k5back" style="position:absolute;">
-      		<img src="images\knobs part 11.png" width="80px" height="80px"
-            style="margin-left:25px; margin-top:25px; position:absolute;" id="knob5">
-          <img src="images\knobp.png" width="122px" height="102px"
-            style="margin-left:2px; margin-top:3px; position:absolute;">
-
-      	</div>
-        <select id="select_5" class="select_5" disabled="true"  ><sup >No. Of Bulbs</sup>
-          <option value="0" disabled selected>X0.1&#181F</option>
-          <option value="17">1</option>
-          <option value="18">2</option>
-          <option value="19">4</option>
-          <option value="20">6</option>
-        </select>
-      	<!--detector code-->
-      	<div class="detector" style="position:absolute;">
-      		<p style="position:absolute;color:white;margin-left:30px;margin-top:60px;">Digital Null Detector</p>
-      	</div>
-      	<!--circuit diagram-->
-      	<div class="circuit" style="position:absolute;">
-      		<img src="images\circuit.png" height="250px " width="280px" style="position:absolute;margin-left:580px;margin-top:5px;">
-      		<p style="position:absolute;color:white;margin-left:665px;margin-top:255px;">Circuit&nbsp&nbspDiagram</p>
-      	</div>
-      	<!--knob1 code-->
-      	<div class="k1back" style="position:absolute;">
-      		
-          <img src="images\knobs part 11.png" width="80px" height="80px"
-            style="margin-left:25px; margin-top:25px; position:absolute;" id="knob1">
-          <img src="images\knobq.png" width="130px" height="102px"
-            style="margin-top:3px; position:absolute;">
-
-        </div>
-        <select id="select_1" class="select_1" disabled="true"  ><sup >No. Of Bulbs</sup>
-          <option value="0" disabled selected>R2(P)</option>
-          <option value="1">0</option>
-          <option value="2">10</option>
-          <option value="3">100</option>
-          <option value="4">1000</option>
-        </select>
-        <!--knob2 code-->
-        <div class="k2back" style="position:absolute;">
-          <img src="images\knobs part 11.png" width="80px" height="80px"
-            style="margin-left:25px; margin-top:25px; position:absolute;" id="knob2">
-          <img src="images\knobq.png" width="130px" height="102px"
-            style="margin-top:3px; position:absolute;">
-        </div>
-        <select id="select_2" class="select_2" disabled="true"  ><sup >No. Of Bulbs</sup>
-          <option value="0" disabled selected>R3(Q)</option>
-          <option value="5">0</option>
-          <option value="6">10</option>
-          <option value="7">100</option>
-          <option value="8">1000</option>
-        </select>
-        <!--knob3 code-->
-        <div class="k3back" style="position:absolute;">
-          <img src="images\knobs part 11.png" width="80px" height="80px"
-            style="margin-left:25px; margin-top:25px; position:absolute;" id="knob3">
-          <img src="images\knobp.png" width="130px" height="102px"
-            style="margin-top:3px; position:absolute;">
-        </div>
-        <select id="select_3" class="select_3" disabled="true"  ><sup >No. Of Bulbs</sup>
-          <option value="0" disabled selected>X0.01&#181F</option>
-          <option value="9">1</option>
-          <option value="10">2</option>
-          <option value="11">7</option>
-          <option value="12">8</option>
-        </select>
-        <!--knob4 code-->
-        <div style="position:absolute;">
-          <p style="position:absolute;color:white;left:600px;top:294px;">C<sub>3</sub></p>
-        </div>
-        <div class="k4back" style="position:absolute;">
-          <img src="images\knobs part 11.png" width="80px" height="80px"
-            style="margin-left:25px; margin-top:25px; position:absolute;" id="knob4">
-          <img src="images\knobr.png" width="130px" height="102px"
-            style="margin-top:3px; position:absolute;">
-            <p style="position:absolute;color:white;left:-177px;top:280px;">P</p>
-        </div>
-         <select id="select_4" class="select_4" disabled="true" ><sup >No. Of Bulbs</sup>
-          <option value="0" disabled selected>C2 VARIABLE CONDENSER</option>
-          <option value="13">25</option>
-          <option value="14">75</option>
-          <option value="15">125</option>
-          <option value="16">175</option>
-        </select>
-        <!--capacitor-->
-        <div class="cap" style="position:absolute;">
-        	<img src="images\capacitor.png" width="110px" height="30px" style="position:absolute;left:15px;top:10px;">
-        	<p style="position:absolute;color:white;left:35px;top:34px;">Capacitor</p>
-        </div>
-
-        
-      </div>
-       <div class="jtk-demo-main">
-            <!-- demo -->
-            <div class="jtk-demo-canvas canvas-wide animation-demo jtk-surface jtk-surface-nopan" id="canvas">
-                <div class="littledot" id="ld1"></br></br><a href="#" class="cmdLink detach" rel="ld1" Style="color:orangered"><b>M<sub>1</sub></b></a></div>
-                <div class="littledot" id="ld2"></br></br><a href="#" class="cmdLink detach" rel="ld2" Style="color:orangered"><b>M<sub>2</sub></b></a></div>
-                <div class="littledot" id="ld3"><a href="#" class="cmdLink detach" rel="ld3" Style="margin-left:1.5em;color:orangered">M<sub>3</sub></a></div>
-                <div class="littledot" id="ld4"><a href="#" class="cmdLink detach" rel="ld4" Style="margin-left:1.5em;color:orangered">M<sub>4</sub></a></div>
-                <div class="littledot" id="ld5"></br><a href="#" class="cmdLink detach" rel="ld5" Style="color:orangered">B<sub>1</sub></a></div>          
-                <div class="littledot" id="ld6"></br><a href="#" class="cmdLink detach" rel="ld6" Style="color:orangered">B<sub>2</sub></a></div>
-                <div class="littledot" id="ld7"><a href="#" class="cmdLink detach" rel="ld7" style="margin-left:1.5em;margin-top:2em;color:orangered" ><b>B<sub>3</sub></b></a></div>
-                <div class="littledot" id="ld8"><a href="#" class="cmdLink detach" rel="ld8" style="margin-left:1.5em;margin-top:2em;color:orangered"><b>B<sub>4</sub></b></a></div>
-                <div class="littledot" id="ld9"></br><a href="#" class="cmdLink detach" rel="ld9" Style="color:orangered"><b>D<sub>1</sub></b></a></div>
-                <div class="littledot" id="ld10"></br><a href="#" class="cmdLink detach" rel="ld10" Style="color:orangered"><b>D<sub>2</sub></b></a></div>
-                <div class="littledot" id="ld11"><br><a href="#" class="cmdLink detach" rel="ld11" Style="color:orangered">D<sub>3</sub></a></div>
-                <div class="littledot" id="ld12"><br><a href="#" class="cmdLink detach" rel="ld12" Style="color:orangered">D<sub>4</sub></a></div>
-                <div class="littledot" id="ld13"></br><a href="#" class="cmdLink detach" rel="ld13" style="margin-left:1.2em;margin-top:2em;color:orangered"><b>X<sub>1</sub></b></a></div>
-                <div class="littledot" id="ld14"><a href="#" class="cmdLink detach" rel="ld14" style="margin-left:1.6em;margin-top:2em;color:orangered"><b>X<sub>2</sub></b></a></div>
-                <div class="littledot" id="ld15"><a href="#" class="cmdLink detach" rel="ld15" style="margin-left:1.6em;margin-top:2em;color:orangered"><b>X<sub>3</sub></b></a></div>
-                <div class="littledot" id="ld16"></br><a href="#" class="cmdLink detach" rel="ld16" style="margin-left:1.4em;margin-top:2em;color:orangered"><b>X<sub>4</sub></b></a></div>                          
-                <div class="littledot" id="ld21"></br><a href="#" class="cmdLink detach" rel="ld21" Style="color:orangered"><b>S<sub>1</sub></b></a></div>
-                <div class="littledot" id="ld22"></br><a href="#" class="cmdLink detach" rel="ld22" Style="color:orangered"><b>S<sub>2</sub></b></a></div>
-                                
-<br><br>
-
-            
-        </div><br>
-
-        <!-- JS -->
-        <script src="js/jsplumb1.js"></script>
-        <!-- /JS -->
-
-    <!--  demo code -->
-    <script src="js/demo1.js"></script>
-    <div class="content" style="position: absolute;">
-
-      <div class="exampleContainer">
-      <div id="testArray1" class="med-sevenSegArray5Slanted"></div>
-      </div>
-
-      <!--instruction buttton-->
-      <div class="dropdown">
-  			<button class="dropbtn">INSTRUCTIONS</button>
-  			<div class="dropdown-content">
-   				<b><p>STEP 1 : Make all the Correct Connections.</p></b>                 
-          <p>1.&nbsp &nbsp M<sub>1</sub> of MCB - M<sub>3</sub> of ScheringKit</p>
-          <p>2.&nbsp &nbsp M<sub>2</sub> of MCB - M<sub>4</sub> of ScheringKit</p>
-          
-          <p>3.&nbsp &nbsp B<sub>1</sub> of Set Amplitude - B<sub>3</sub> of Sine Wave</p>
-          <p>4.&nbsp &nbsp B<sub>2</sub> of Set Amplitude - B<sub>4</sub> of Sine Wave</p>
-          <p>5.&nbsp &nbsp D<sub>1</sub> of Null Detector - D<sub>3</sub> of Digital Null Detector</p>
-          <p>6.&nbsp &nbsp D<sub>2</sub> of Null Detector - D<sub>4</sub> of Digital Null Detector</p>
-          <p>7.&nbsp &nbsp X<sub>1</sub> - S<sub>1</sub> of Capacitor</p>
-                    <p>8.&nbsp &nbsp X<sub>2</sub> - S<sub>2</sub> of Capacitor</p>
-                              <p>9.&nbsp &nbsp X<sub>3</sub> - X<sub>4</sub></p>
-                              
-          <b><p>STEP 2 : Click on "CHECK" Button. &nbsp &nbsp</p></b> 
-         <b><p> STEP 3 : Click on the MCB to Turn ON the circuit.</p></b>
-          <b><p>STEP 4 : Click on Set Amplitude to set amplitude by clicking on knob.</p></b>
-          
-          <b><p>STEP 5 : Select the values from various dropdowns to set minimum value of null detector</p></b>
-          <b><p>STEP 6 : Click "ADD" button to add the values to the Observation Table.</p></b>
-          <b><p>STEP 7 : If combination is wrong then select another combination.</p></b>
-          <b><p>STEP 8 : Add different values to the Table by selecting different value of multipliers.</p></b>
-          <b><p>STEP 9 : Click on "PRINT" button to print the page.</p></b>
-        </div>
-		</div>
-		<!--buttons code-->
-		<input type="button" value="ADD" id="add" style="position:absolute; top: 505px;left:100px;" onclick="addtotable();">
-		<input type="button" value="RESET" id="reset" id="button"   style="position:absolute; top:505px;left:280px;" onclick="window.location.href = 'index.html';">
-  
-		<input type="button" value="CHECK" class="check" id="check-button" style="position:absolute; top:505px;left:460px;">
-		<input type="button" value="PRINT" id="print" style="position:absolute; top:505px;left:680px" onclick="window.print()">
-		<!--Formula code-->
-		<div class="formula" style="position:absolute;">
-  			<h2><u>FORMULA</u></h2>
-  			<div><p>1. Find C<sub>1</sub> while </p>
-  				<p>2. Adding values of X 0.1, 0.01 &#181F to find C<sub>3</sub> </p>
-  				<p>3. Ratio P/Q(Multipliers) </p>
-  				<p>4. where P is R<sub>2</sub> and Q is R<sub>3</sub> </p>
-  				<p>5. C<sub>1</sub> = P/Q * C<sub>3</sub></p>
-			</div>
-		</div>
-		<!--table code-->
-		<div style="margin-top: 270px; position:absolute;">
-			<table class="a" id="tb1" style="margin-left: 920px;">
-  			<tbody>
-				<tr>
-          <th>S.NO</th>
-          <th>Q</th>
-          <th>P</th>
-          <th>C<sub>3</sub></th>
-          <th>C<sub>1</sub> = Q/P * C<sub>3</sub></th>
-        </tr>
-  			</tbody>
-			</table>
-		</div>
-	
-
-      
-	</div>
-  <div class="copyright" style="position:absolute">&#169Copyright 2022 Virtual Labs, IIT Roorkee</div>
+            <h1 align="center">Schering's Bridge
+            </h1><br><br>
+            <!-- Write your experiment name -->
+            <h1 align="center">Simulation
+            </h1><br><br><br><br>
+            <center>
+                <a class="bal-btn" href="Schering.html">Schering Bridge <br>(With Kit)
+                    
+                </a>
+                &nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="unbal-btn" href="Schering Bridge\Schering_bridge.html">Schering Bridge <br>(With Circuit)</a>
+            </center>
+        </section>
+    </div>
 </body>
-<!--Scrypting of seven segment code starts-->
-
-<script>
-
- (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-44023738-2', 'brandonlwhite.github.io');
-        ga('send', 'pageview');
-       
-</script>
-
-<!--Scrypting of seven segment code ends-->
 
 </html>
