@@ -4,7 +4,7 @@
 <b>Discipline | <b>Electrical Engineering
 :--|:--|
 <b> Lab | <b> Electrical Measurements Lab
-<b> Experiment|     <b> Measurement of unknown resistance by schering bridge.
+<b> Experiment|     <b>4. Measurement of unknown resistance by schering bridge.
 
 ### About the Experiment 
 

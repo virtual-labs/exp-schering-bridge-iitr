@@ -1,1 +1,1 @@
-## Measurement of capacitance by Schering Bridge.
+## Measurement of Capacitance by Schering Bridge.

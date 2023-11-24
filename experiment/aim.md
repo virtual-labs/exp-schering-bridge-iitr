@@ -1,1 +1,1 @@
-#### Measurement of capacitance by Schering Bridge.
+## To Determine the Capacitance of an unknown Capacitor by Schering Bridge.
