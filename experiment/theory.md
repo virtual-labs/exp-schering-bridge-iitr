@@ -1,4 +1,4 @@
-## Introduction
+### Introduction
 
 <div style="text-align: justify; font-size: 18px;font-family: 'Nunito Sans',sans-serif;">
 The Schering bridge use for measuring the capacitance of the capacitor, dissipation factor, properties of an insulator, capacitor bushing, insulating oil and other insulating materials. It is one of the most commonly used AC bridge. The Schering bridge works on the principle of balancing the load on its arm.<br><br>
