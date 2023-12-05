@@ -1,3 +1,11 @@
+<head>
+
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> 
+  
+</script>
+
+</head>
+
 ### Introduction
 
 <div style="text-align: justify; font-size: 18px;font-family: 'Nunito Sans',sans-serif;">
@@ -23,13 +31,13 @@ When the bridge is in the balanced condition, zero current passes through the de
 
 <center>
 
-$\frac{Z1}{Z2} = \frac{Z3}{Z4}$
+$$\frac{Z1}{Z2} = \frac{Z3}{Z4}$$
 
 </center>
 
 <center>
 
-$Z1Z4 = Z2Z3$
+$$Z1Z4 = Z2Z3$$
 
 </center>
 
@@ -37,19 +45,19 @@ So,
 
 <center>
 
-$ \left (r_1 + \frac{1}{jωC_1} \right ) \left (\frac{R_4}{1+jωC_4R_4} \right ) = \frac{1}{jωC_2}. R_3$
+$$ \left (r_1 + \frac{1}{jωC_1} \right ) \left (\frac{R_4}{1+jωC_4R_4} \right ) = \frac{1}{jωC_2}. R_3$$
 
 </center>
 
 <center>
 
-$ \left (r_1 + \frac{1}{jωC_1} \right )R_4 = \frac{R_3}{jωC_2}(1 + jωC_4R_4)$
+$$ \left (r_1 + \frac{1}{jωC_1} \right )R_4 = \frac{R_3}{jωC_2}(1 + jωC_4R_4)$$
 
 </center>
 
 <center>
 
-$r_1R_4 - \frac{jR_4}{ωC_1} = -j\frac{R_3}{ωC_1} + \frac{R_3R_4C_4}{C_2}$
+$$r_1R_4 - \frac{jR_4}{ωC_1} = -j\frac{R_3}{ωC_1} + \frac{R_3R_4C_4}{C_2}$$
 
 </center>
 
@@ -57,13 +65,13 @@ Equating the real and imaginary equations, we get
 
 <center>
 
-$r_1 = \frac{R_3C_4}{C_2}.......(1)$
+$$r_1 = \frac{R_3C_4}{C_2}.......(1)$$
 
 </center>
 
 <center>
 
-$C_1 = C_2 \left (\frac{R_4}{R_3} \right ).........(2)$
+$$C_1 = C_2 \left (\frac{R_4}{R_3} \right ).........(2)$$
 
 </center>
 
@@ -81,19 +89,19 @@ The dissipation factor obtains with the help of the phasor diagram. The dissipat
 
 <center>
 
-$D_1 = tanδ = ωC_1r_1 = ω(C_1r_1)$
+$$D_1 = tanδ = ωC_1r_1 = ω(C_1r_1)$$
 
 </center>
 
 <center>
 
-$= ω \left (\frac{C_2R_4}{R_3} \right ) * \left (\frac{R_3C_4}{C_2} \right )$
+$$= ω \left (\frac{C_2R_4}{R_3} \right ) * \left (\frac{R_3C_4}{C_2} \right )$$
 
 </center>
 
 <center>
 
-$D_1 = ωC_4R_4$
+$$D_1 = ωC_4R_4$$
 
 </center>
 
