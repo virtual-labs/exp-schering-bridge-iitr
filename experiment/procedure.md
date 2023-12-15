@@ -1,5 +1,3 @@
-## Procedure<br>
-
 **STEP 1 :** Make connections as per the instructions given below:  
 1.    <b>M<sub>1</sub></b> of MCB - <b>M<sub>3</sub></b> of Kit 
 2.    <b>M<sub>2</sub></b> of MCB - <b>M<sub>4</sub></b> of Kit
