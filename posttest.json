@@ -1,0 +1,8 @@
+[{"question":"Quality factor is given by which of the following expression?","answers":{"a":"Q = 1/R","b":"Q = R","c":"Q = X⁄R","d":"Q = XR"},"correctAnswer":"c"},
+{"question":"Commercial Schering bridge can be used for the measurement of capacitances from _____________.","answers":{"a":"10pF to 0.1nF","b":"100pF to 1μF","c":"50nF to 10mF","d":"25mF to 5F"},"correctAnswer":"b"},
+{"question":"A Schering bridge can be used for the ______________.","answers":{"a":"testing capacitors","b":"measuring currents","c":"measuring voltages","d":"protecting the circuit from temperature rises"},"correctAnswer":"a"},
+{"question":"The detector used in a high voltage Schering bridge is _________.","answers":{"a":"tunable circuit","b":"e.m.f source","c":"headphone","d":"vibration galvanometer"},"correctAnswer":"d"},
+{"question":"How are the inter-capacitance errors minimized?","answers":{"a":"by separating the plates of the capacitance","b":"by using earthing","c":"by reducing the area of cross section of the capacitors","d":"by increasing the distance between the capacitor plates"},"correctAnswer":"b"}]
+
+
+
